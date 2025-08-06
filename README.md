@@ -42,6 +42,6 @@ The project was built from scratch using HTML, CSS, and vanilla JavaScript, with
 To run this project locally, simply clone the repository and open the `index.html` file in your browser.
 
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/gummybearansh/Pokemon-Card-Generator.git>
 cd retro-pokemon-card-generator
 open index.html
