@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+.center-everything{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#title {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+#input-box-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#pokemon-name {
+    font-family: VT323;
+    font-size: 25px;
+}
+#find-button {
+    font-family: VT323;
+    font-size: 20px;
+}
+
+body {
+    font-family: 'VT323';
+    font-size: 18px;
+    background-color: #dcdcdc;
+}
+#gif {
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    background-color: #e8e8d0;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 408px;
+    position: absolute;
+    cursor: grab;
+    z-index: 100;
+}
+
+.card-gif {
+    padding: 20px 0px;
+    margin: 5px auto;
+    background-color: #c8d8b0;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #333;
+}
+
+.card-text {
+    width: 95%;
+    margin: auto auto;
+    background-color: #d9c2a9;
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+    border: 3px solid #333;
+}
+
+h3 {
+    margin-left: 10px;  
+}
+
+
+.card-animation {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px) rotate(-1deg); }
+  50% { transform: translateX(5px) rotate(1deg); }
+  75% { transform: translateX(-5px) rotate(-1deg); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.draggable-text {
+    color: #fff; /* White text for contrast */
+    background-color: #333; /* Dark background */
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Press Start 2P', cursive; /* Use a retro font */
+    font-size: 10px;
+    animation: flash 1.5s infinite; /* Apply the flashing animation */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 101; /* Make sure it's on top of the card */
+}
